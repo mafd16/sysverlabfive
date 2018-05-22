@@ -210,4 +210,13 @@ public class bowlingTest {
         int gameScore1 = bowling.gameScore(game1);
         assertEquals(300, gameScore1);
     }
+
+    // ------ Test (19) Real Game ------------
+    @Test
+    public void evaluatesExpression15() {
+        bowling bowling = new bowling();
+        int game1[] = {6,3,7,1,8,2,7,2,10,0,6,2,7,3,10,0,8,0,7,3,10};
+        int gameScore1 = bowling.gameScore(game1);
+        assertEquals(135, gameScore1);
+    }
 }
