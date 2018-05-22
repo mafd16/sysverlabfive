@@ -53,6 +53,6 @@ public class bowling {
 
 	// The function isStrike
 	public static boolean isStrike(int[] data) {
-		return true;
+		return (data[0] == 10) ? true : false;
 	}
 }
