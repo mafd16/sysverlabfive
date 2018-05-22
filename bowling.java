@@ -51,4 +51,8 @@ public class bowling {
 		return sum;
 	}
 
+	// The function isStrike
+	public static boolean isStrike(int[] data) {
+		return true;
+	}
 }
