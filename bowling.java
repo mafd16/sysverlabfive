@@ -41,7 +41,8 @@ public class bowling {
 			int frame[] = {data[i],data[i + 1]};
 			if (this.isStrike(frame)) {
 				int frame2[] = {data[i + 2],data[i + 3]};
-				sum += this.strikeSum(frame, frame2);
+				int frame3[] = {data[i + 4],data[i + 5]};
+				sum += this.strikeSum(frame, frame2, frame3);
 			}else if (this.isSpare(frame)) {
 				int frame2[] = {data[i + 2],data[i + 3]};
 				sum += this.spareSum(frame, frame2);
@@ -62,8 +63,13 @@ public class bowling {
 	}
 
 	// The function strikeSum
-	public static int strikeSum(int[] data1, int[] data2) {
-		int sum = data1[0] + data2[0] + data2[1];
+	public static int strikeSum(int[] data1, int[] data2, int[] data3) {
+		int sum = 0;
+		if (data2[0] == 10) {
+			sum = data1[0] + data2[0] + data3[0];
+		}else {
+			sum = data1[0] + data2[0] + data2[1];
+		}
 		return sum;
 	}
 

@@ -80,7 +80,8 @@ public class bowlingTest {
         bowling bowling = new bowling();
         int frame1[] = {10,0};
         int frame2[] = {3,6};
-        int sum1 = bowling.strikeSum(frame1, frame2);
+        int frame3[] = {1,2};
+        int sum1 = bowling.strikeSum(frame1, frame2, frame3);
         assertEquals(19, sum1);
     }
 
