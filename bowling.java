@@ -36,10 +36,12 @@ public class bowling {
 
 	// The function gameScore
 	public int gameScore(int[] data) {
-		int a = 0;
-		int b = 0;
 		int sum = 0;
-		for (int i = 0; i < data.length; i++) {
+		for (int i = 0; i < data.length - 1; i += 2) {
+			int frame[] = {data[i],data[i + 1]};
+			sum += this.ordinaryFrameScore(frame);
+		}
+		/*for (int i = 0; i < data.length; i++) {
 			if (i % 2 == 1) {
 				b = data[i];
 				int frame[] = {a,b};
@@ -47,7 +49,7 @@ public class bowling {
 			}else {
 				a = data[i];
 			}
-		}
+		}*/
 		return sum;
 	}
 
