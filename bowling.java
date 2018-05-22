@@ -37,23 +37,19 @@ public class bowling {
 	// The function gameScore
 	public int gameScore(int[] data) {
 		int sum = 0;
-		for (int i = 0; i < data.length - 1; i += 2) {
+		for (int i = 0; i < 19; i += 2) {
 			int frame[] = {data[i],data[i + 1]};
 			if (this.isStrike(frame)) {
 				int frame2[] = {data[i + 2],data[i + 3]};
 				int frame3[] = {data[i + 4],data[i + 5]};
 				sum += this.strikeSum(frame, frame2, frame3);
 			}else if (this.isSpare(frame)) {
-				int frame2[] = {data[i + 2],data[i + 3]};
+				int frame2[] = {data[i + 2]};
 				sum += this.spareSum(frame, frame2);
 			}else {
 				sum += this.ordinaryFrameScore(frame);
 			}
 		}
-		/*for (int i = 0; i < data.length - 1; i += 2) {
-			int frame[] = {data[i],data[i + 1]};
-			sum += this.ordinaryFrameScore(frame);
-		}*/
 		return sum;
 	}
 
