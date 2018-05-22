@@ -119,4 +119,13 @@ public class bowlingTest {
         int sum1 = bowling.spareSum(frame1, frame2);
         assertEquals(13, sum1);
     }
+
+    // --------------- Test for calculate game score incl. spare -----------
+    @Test
+    public void evaluatesExpression6_3() {
+        bowling bowling = new bowling();
+        int game1[] = {1,9,3,6,7,2,3,6,4,4,5,3,3,3,4,5,8,1,2,6};
+        int gameScore1 = bowling.gameScore(game1);
+        assertEquals(88, gameScore1);
+    }
 }
