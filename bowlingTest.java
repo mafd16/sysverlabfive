@@ -84,5 +84,13 @@ public class bowlingTest {
         assertEquals(19, sum1);
     }
 
+    // --------------- Test for calculate game score incl. strike -----------
+    @Test
+    public void evaluatesExpression5_3() {
+        bowling bowling = new bowling();
+        int game1[] = {10,0,3,6,7,2,3,6,4,4,5,3,3,3,4,5,8,1,2,6};
+        int gameScore1 = bowling.gameScore(game1);
+        assertEquals(94, gameScore1);
+    }
 
 }
