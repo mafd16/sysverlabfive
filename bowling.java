@@ -63,4 +63,9 @@ public class bowling {
 		int sum = data1[0] + data2[0] + data2[1];
 		return sum;
 	}
+
+	// The function isSpare
+	public static boolean isSpare(int[] data) {
+		return (data[0] != 10 && data[0] + data[1] == 10) ? true : false;
+	}
 }
