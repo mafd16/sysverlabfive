@@ -79,4 +79,10 @@ public class bowling {
 		int sum = data1[0] + data1[1] + data2[0];
 		return sum;
 	}
+
+	// The function lastStrikeSum
+	public static int lastStrikeSum(int[] data1, int[] data2) {
+		int sum = data1[0] + data2[0] + data2[1];
+		return sum;
+	}
 }
