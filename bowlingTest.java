@@ -109,4 +109,14 @@ public class bowlingTest {
         boolean spare3 = bowling.isSpare(frame3);
         assertEquals(false, spare3);
     }
+
+    // --------------- Test for calculate spare score  -----------------
+    @Test
+    public void evaluatesExpression6_2() {
+        bowling bowling = new bowling();
+        int frame1[] = {1,9};
+        int frame2[] = {3,6};
+        int sum1 = bowling.spareSum(frame1, frame2);
+        assertEquals(13, sum1);
+    }
 }
