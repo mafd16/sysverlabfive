@@ -10,12 +10,20 @@ public class bowling {
        //System.out.print("Started");
 	}
 
-	// The function bowling
+	// The function ordinaryFrameScore
 	public static int ordinaryFrameScore(int[] data) {
 		int summa = data[0] + data[1];
 		return summa;
 	}
 
+	// The function isGame
+	public static boolean isGame(int[] data) {
+		if (data.length == 20) {
+			return true;
+		}else {
+			return false;
+		}
+	}
 
 
 }
