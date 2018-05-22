@@ -6,10 +6,17 @@ public class bowlingTest {
     @Test
     public void evaluatesExpression2() {
         bowling bowling = new bowling();
-        Object[] item = new Object[]{2,4};
+        int item[] = {2,4};
         int sum = bowling.ordinaryFrameScore(item);
-
         assertEquals(6, sum);
+
+        int item2[] = {2,6};
+        int sum2 = bowling.ordinaryFrameScore(item2);
+        assertEquals(8, sum2);
+
+        int item3[] = {0,9};
+        int sum3 = bowling.ordinaryFrameScore(item3);
+        assertEquals(9, sum3);
     }
 
 
