@@ -169,4 +169,14 @@ public class bowlingTest {
         int gameScore1 = bowling.gameScore(game1);
         assertEquals(90, gameScore1);
     }
+
+    // ------ Test (15) for calculate game score when
+    // ------ last frame is a strike. -----------
+    @Test
+    public void evaluatesExpression11() {
+        bowling bowling = new bowling();
+        int game1[] = {1,5,3,6,7,2,3,6,4,4,5,3,3,3,4,5,8,1,10,0,7,2};
+        int gameScore1 = bowling.gameScore(game1);
+        assertEquals(92, gameScore1);
+    }
 }
