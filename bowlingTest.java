@@ -61,27 +61,20 @@ public class bowlingTest {
         assertEquals(86, gameScore2);
     }
 
+    // --------------- Test for identify strike  -----------------
+    @Test
+    public void evaluatesExpression5_1() {
+        bowling bowling = new bowling();
+        int frame1[] = {1,5};
+        boolean strike1 = bowling.isStrike(frame1);
+        assertEquals(false, strike1);
+
+        int frame2[] = {10,0};
+        boolean strike2 = bowling.isStrike(frame2);
+        assertEquals(true, strike2);
+    }
 
 
-    // --------------- Test for -----------------
-    /*@Test
-    public void evaluatesExpression3() {
-        ShellSort2 shellsort = new ShellSort2();
-        Object[] item = new Object[]{1,3,2,5,4,7,9,6,11,13,8,14,10,12};
-        shellsort.Shellsort(item);
 
-        assertEquals(1, item[0]);
-        assertEquals(2, item[1]);
-        assertEquals(3, item[2]);
-        assertEquals(4, item[3]);
-        assertEquals(5, item[4]);
-        assertEquals(6, item[5]);
-        assertEquals(7, item[6]);
-        assertEquals(8, item[7]);
-        assertEquals(9, item[8]);
-        assertEquals(10, item[9]);
-        assertEquals(11, item[10]);
-        assertEquals(12, item[11]);
-    }*/
 
 }
