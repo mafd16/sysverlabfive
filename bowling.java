@@ -39,7 +39,7 @@ public class bowling {
 		int sum = 0;
 		for (int i = 0; i < data.length - 1; i += 2) {
 			int frame[] = {data[i],data[i + 1]};
-			if (frame[0] == 10) {
+			if (this.isStrike(frame)) {
 				int frame2[] = {data[i + 2],data[i + 3]};
 				sum += this.strikeSum(frame, frame2);
 			}else {
