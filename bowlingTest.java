@@ -2,7 +2,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 public class bowlingTest {
-    // --------------- Test for -----------------
+    // --------------- Test for Frame Score  -----------------
     @Test
     public void evaluatesExpression2() {
         bowling bowling = new bowling();
@@ -17,6 +17,20 @@ public class bowlingTest {
         int item3[] = {0,9};
         int sum3 = bowling.ordinaryFrameScore(item3);
         assertEquals(9, sum3);
+    }
+
+
+    // --------------- Test for define game  -----------------
+    @Test
+    public void evaluatesExpression3() {
+        bowling bowling = new bowling();
+        int game1[] = {1,5,3,6,7,2,3,6,4,4,5,3,3,3,4,5,8,1,2,6};
+        boolean isGame1 = bowling.isGame(game1);
+        assertEquals(true, isGame1);
+
+        int game2[] = {1,5,3,6,4,4,5,3,3,3,4,5,8,1,2,6};
+        boolean isGame2 = bowling.isGame(game2);
+        assertEquals(false, isGame2);
     }
 
 
