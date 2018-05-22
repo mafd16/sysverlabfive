@@ -58,6 +58,7 @@ public class bowling {
 
 	// The function strikeSum
 	public static int strikeSum(int[] data1, int[] data2) {
-		return 19;
+		int sum = data1[0] + data2[0] + data2[1];
+		return sum;
 	}
 }
