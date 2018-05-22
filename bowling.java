@@ -40,9 +40,14 @@ public class bowling {
 		for (int i = 0; i < 19; i += 2) {
 			int frame[] = {data[i],data[i + 1]};
 			if (this.isStrike(frame)) {
-				int frame2[] = {data[i + 2],data[i + 3]};
-				int frame3[] = {data[i + 4],data[i + 5]};
-				sum += this.strikeSum(frame, frame2, frame3);
+				if (i == 18) {
+					int extraframe[] = {data[20], data[21]};
+					sum += this.lastStrikeSum(frame, extraframe);
+				}else {
+					int frame2[] = {data[i + 2],data[i + 3]};
+					int frame3[] = {data[i + 4],data[i + 5]};
+					sum += this.strikeSum(frame, frame2, frame3);
+				}
 			}else if (this.isSpare(frame)) {
 				int frame2[] = {data[i + 2]};
 				sum += this.spareSum(frame, frame2);
