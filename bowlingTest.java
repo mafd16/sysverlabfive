@@ -55,6 +55,10 @@ public class bowlingTest {
         int game1[] = {1,5,3,6,7,2,3,6,4,4,5,3,3,3,4,5,8,1,2,6};
         int gameScore1 = bowling.gameScore(game1);
         assertEquals(81, gameScore1);
+
+        int game2[] = {2,5,3,7,7,2,3,6,6,4,5,4,3,3,4,5,8,1,2,6};
+        int gameScore2 = bowling.gameScore(game2);
+        assertEquals(86, gameScore2);
     }
 
 
