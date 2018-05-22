@@ -138,4 +138,14 @@ public class bowlingTest {
         int gameScore1 = bowling.gameScore(game1);
         assertEquals(103, gameScore1);
     }
+
+    // ----- Test (12) for calculate game score incl.
+    // ----- two subsequent strikes -----------
+    @Test
+    public void evaluatesExpression8() {
+        bowling bowling = new bowling();
+        int game1[] = {10,0,10,0,7,2,3,6,4,4,5,3,3,3,4,5,8,1,2,6};
+        int gameScore1 = bowling.gameScore(game1);
+        assertEquals(112, gameScore1);
+    }
 }
