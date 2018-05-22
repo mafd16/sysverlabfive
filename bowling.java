@@ -42,6 +42,9 @@ public class bowling {
 			if (this.isStrike(frame)) {
 				int frame2[] = {data[i + 2],data[i + 3]};
 				sum += this.strikeSum(frame, frame2);
+			}else if (this.isSpare(frame)) {
+				int frame2[] = {data[i + 2],data[i + 3]};
+				sum += this.spareSum(frame, frame2);
 			}else {
 				sum += this.ordinaryFrameScore(frame);
 			}

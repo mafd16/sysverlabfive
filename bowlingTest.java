@@ -2,7 +2,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 public class bowlingTest {
-    // --------------- Test for Frame  -----------------
+    // --------------- Test (1) for Frame  -----------------
     @Test
     public void evaluatesExpression1() {
         bowling bowling = new bowling();
@@ -16,7 +16,7 @@ public class bowlingTest {
     }
 
 
-    // --------------- Test for Frame Score  -----------------
+    // --------------- Test (2) for Frame Score  -----------------
     @Test
     public void evaluatesExpression2() {
         bowling bowling = new bowling();
@@ -34,7 +34,7 @@ public class bowlingTest {
     }
 
 
-    // --------------- Test for game  -----------------
+    // --------------- Test (3) for game  -----------------
     @Test
     public void evaluatesExpression3() {
         bowling bowling = new bowling();
@@ -48,7 +48,7 @@ public class bowlingTest {
     }
 
 
-    // --------------- Test for game score  -----------------
+    // --------------- Test (4) for game score  -----------------
     @Test
     public void evaluatesExpression4() {
         bowling bowling = new bowling();
@@ -56,12 +56,12 @@ public class bowlingTest {
         int gameScore1 = bowling.gameScore(game1);
         assertEquals(81, gameScore1);
 
-        int game2[] = {2,5,3,7,7,2,3,6,6,4,5,4,3,3,4,5,8,1,2,6};
+        int game2[] = {2,5,3,6,7,2,3,6,5,4,5,4,3,3,4,5,8,1,2,6};
         int gameScore2 = bowling.gameScore(game2);
-        assertEquals(86, gameScore2);
+        assertEquals(84, gameScore2);
     }
 
-    // --------------- Test for identify strike  -----------------
+    // --------------- Test (5) for identify strike  -----------------
     @Test
     public void evaluatesExpression5_1() {
         bowling bowling = new bowling();
@@ -74,7 +74,7 @@ public class bowlingTest {
         assertEquals(true, strike2);
     }
 
-    // --------------- Test for calculate strike score  -----------------
+    // --------------- Test (6) for calculate strike score  -----------------
     @Test
     public void evaluatesExpression5_2() {
         bowling bowling = new bowling();
@@ -84,7 +84,7 @@ public class bowlingTest {
         assertEquals(19, sum1);
     }
 
-    // --------------- Test for calculate game score incl. strike -----------
+    // --------------- Test (7) for calculate game score incl. strike -----------
     @Test
     public void evaluatesExpression5_3() {
         bowling bowling = new bowling();
@@ -93,7 +93,7 @@ public class bowlingTest {
         assertEquals(94, gameScore1);
     }
 
-    // --------------- Test for identify spare  -----------------
+    // --------------- Test (8) for identify spare  -----------------
     @Test
     public void evaluatesExpression6_1() {
         bowling bowling = new bowling();
@@ -110,7 +110,7 @@ public class bowlingTest {
         assertEquals(false, spare3);
     }
 
-    // --------------- Test for calculate spare score  -----------------
+    // --------------- Test (9) for calculate spare score  -----------------
     @Test
     public void evaluatesExpression6_2() {
         bowling bowling = new bowling();
@@ -120,7 +120,7 @@ public class bowlingTest {
         assertEquals(13, sum1);
     }
 
-    // --------------- Test for calculate game score incl. spare -----------
+    // --------------- Test (10) for calculate game score incl. spare -----------
     @Test
     public void evaluatesExpression6_3() {
         bowling bowling = new bowling();
