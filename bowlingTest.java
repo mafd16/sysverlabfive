@@ -190,4 +190,15 @@ public class bowlingTest {
         int frameScore1 = bowling.lastStrikeSum(frame1, frame2);
         assertEquals(19, frameScore1);
     }
+
+    // ------ Test (17) for calculate game score when
+    // ------ it is the last frame and a spare. -----------
+    // ------ Bonus is a strike.
+    @Test
+    public void evaluatesExpression13() {
+        bowling bowling = new bowling();
+        int game1[] = {1,5,3,6,7,2,3,6,4,4,5,3,3,3,4,5,8,1,2,8,10};
+        int gameScore1 = bowling.gameScore(game1);
+        assertEquals(93, gameScore1);
+    }
 }
