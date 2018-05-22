@@ -120,12 +120,22 @@ public class bowlingTest {
         assertEquals(13, sum1);
     }
 
-    // --------------- Test (10) for calculate game score incl. spare -----------
+    // ---- Test (10) for calculate game score incl. spare -----------
     @Test
     public void evaluatesExpression6_3() {
         bowling bowling = new bowling();
         int game1[] = {1,9,3,6,7,2,3,6,4,4,5,3,3,3,4,5,8,1,2,6};
         int gameScore1 = bowling.gameScore(game1);
         assertEquals(88, gameScore1);
+    }
+
+    // -- Test (11) for calculate game score incl. strike followed
+    // by a spare -----------
+    @Test
+    public void evaluatesExpression7() {
+        bowling bowling = new bowling();
+        int game1[] = {10,0,4,6,7,2,3,6,4,4,5,3,3,3,4,5,8,1,2,6};
+        int gameScore1 = bowling.gameScore(game1);
+        assertEquals(103, gameScore1);
     }
 }
