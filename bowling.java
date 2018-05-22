@@ -12,7 +12,11 @@ public class bowling {
 
 	// The function isFrame
 	public static boolean isFrame(int[] data) {
-		return true;
+		if (data.length == 2) {
+			return true;
+		}else {
+			return false;
+		}
 	}
 
 	// The function ordinaryFrameScore
