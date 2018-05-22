@@ -93,4 +93,20 @@ public class bowlingTest {
         assertEquals(94, gameScore1);
     }
 
+    // --------------- Test for identify spare  -----------------
+    @Test
+    public void evaluatesExpression6_1() {
+        bowling bowling = new bowling();
+        int frame1[] = {1,9};
+        boolean spare1 = bowling.isSpare(frame1);
+        assertEquals(true, spare1);
+
+        int frame2[] = {4,6};
+        boolean spare2 = bowling.isSpare(frame2);
+        assertEquals(true, spare2);
+
+        int frame3[] = {4,4};
+        boolean spare3 = bowling.isSpare(frame3);
+        assertEquals(false, spare3);
+    }
 }
