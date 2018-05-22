@@ -39,16 +39,16 @@ public class bowling {
 		int sum = 0;
 		for (int i = 0; i < data.length - 1; i += 2) {
 			int frame[] = {data[i],data[i + 1]};
-			sum += this.ordinaryFrameScore(frame);
-		}
-		/*for (int i = 0; i < data.length; i++) {
-			if (i % 2 == 1) {
-				b = data[i];
-				int frame[] = {a,b};
-				sum += this.ordinaryFrameScore(frame);
+			if (frame[0] == 10) {
+				int frame2[] = {data[i + 2],data[i + 3]};
+				sum += this.strikeSum(frame, frame2);
 			}else {
-				a = data[i];
+				sum += this.ordinaryFrameScore(frame);
 			}
+		}
+		/*for (int i = 0; i < data.length - 1; i += 2) {
+			int frame[] = {data[i],data[i + 1]};
+			sum += this.ordinaryFrameScore(frame);
 		}*/
 		return sum;
 	}
