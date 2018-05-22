@@ -74,7 +74,15 @@ public class bowlingTest {
         assertEquals(true, strike2);
     }
 
-
+    // --------------- Test for calculate strike score  -----------------
+    @Test
+    public void evaluatesExpression5_2() {
+        bowling bowling = new bowling();
+        int frame1[] = {10,0};
+        int frame2[] = {3,6};
+        int sum1 = bowling.strikeSum(frame1, frame2);
+        assertEquals(19, sum1);
+    }
 
 
 }
