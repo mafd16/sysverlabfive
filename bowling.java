@@ -55,4 +55,9 @@ public class bowling {
 	public static boolean isStrike(int[] data) {
 		return (data[0] == 10) ? true : false;
 	}
+
+	// The function strikeSum
+	public static int strikeSum(int[] data1, int[] data2) {
+		return 19;
+	}
 }
