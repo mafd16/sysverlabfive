@@ -201,4 +201,13 @@ public class bowlingTest {
         int gameScore1 = bowling.gameScore(game1);
         assertEquals(93, gameScore1);
     }
+
+    // ------ Test (18) Best score ------------
+    @Test
+    public void evaluatesExpression14() {
+        bowling bowling = new bowling();
+        int game1[] = {10,0,10,0,10,0,10,0,10,0,10,0,10,0,10,0,10,0,10,0,10,10};
+        int gameScore1 = bowling.gameScore(game1);
+        assertEquals(300, gameScore1);
+    }
 }
