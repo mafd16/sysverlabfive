@@ -149,4 +149,14 @@ public class bowlingTest {
         int gameScore1 = bowling.gameScore(game1);
         assertEquals(112, gameScore1);
     }
+
+    // ------ Test (13) for calculate game score incl.
+    // ------ two spares in a row -----------
+    @Test
+    public void evaluatesExpression9() {
+        bowling bowling = new bowling();
+        int game1[] = {8,2,5,5,7,2,3,6,4,4,5,3,3,3,4,5,8,1,2,6};
+        int gameScore1 = bowling.gameScore(game1);
+        assertEquals(98, gameScore1);
+    }
 }
