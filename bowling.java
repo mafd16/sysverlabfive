@@ -10,6 +10,11 @@ public class bowling {
        //System.out.print("Started");
 	}
 
+	// The function isFrame
+	public static boolean isFrame(int[] data) {
+		return true;
+	}
+
 	// The function ordinaryFrameScore
 	public static int ordinaryFrameScore(int[] data) {
 		int summa = data[0] + data[1];
