@@ -179,4 +179,15 @@ public class bowlingTest {
         int gameScore1 = bowling.gameScore(game1);
         assertEquals(92, gameScore1);
     }
+
+    // ------ Test (16) for calculate frame score when
+    // ------ it is the last frame and a strike. -----------
+    @Test
+    public void evaluatesExpression12() {
+        bowling bowling = new bowling();
+        int frame1[] = {10,0};
+        int frame2[] = {7,2};
+        int frameScore1 = bowling.lastStrikeSum(frame1, frame2);
+        assertEquals(19, frameScore1);
+    }
 }
